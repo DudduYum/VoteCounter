@@ -1,1 +1,20 @@
-<p>Registrati</p>
+<p>Registrati gay</p>
+<form [formGroup]="signUpDataForm" (ngSubmit)="onSubmit()">
+  <label>Nome</label>
+  <input id="nome" type="text" formControlName="firstName"/>
+
+  <label>Cognome</label>
+  <input id="cognome" type="text" formControlName="lastName"/>
+
+  <label>Email</label>
+  <input id="email" type="text" formControlName="email"/>
+
+  <label>Username</label>
+  <input id="nomeutente" type="text" formControlName="login"/>
+
+  <label>Password</label>
+  <input id="secret" type="password" formControlName="password"/>
+
+  <input id="signup" type="submit" value="registrati" />
+  <input id="backbutton" routerLink="" type="button" value="cancella"/>
+</form>
